@@ -1,4 +1,35 @@
 body {
-	background-color: green;
+	background-color: #C9D4E5;
+
     
 }
+.title{
+	color: white;
+}
+img{
+	height: 50%;
+	left: 50px;
+}
+.container {
+	position: relative;
+
+}
+
+.sidebar {
+	position: fixed;
+	top: 0px;
+	height: 15px;
+	width: 100%;
+	background-color: #FFF2F2
+}
+
+.main{
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	padding: 10px;
+	margin: 5px;
+
+
+}
+

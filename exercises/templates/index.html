@@ -1,13 +1,32 @@
 <html>
 
 <head>
-    <title>index</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 
 </head>
 
 <body>
-    <h1>my fav sport is dance</h1>
-    <p>because its an art and a sport</p>
+	<div class="container">
+		<div class="sidebar">
+			<p>sidebar</p>
+			
+		</div>
+		<div class="title" class="main">
+			<h1>my fav sport is dance</h1>
+			<p>because its an art and a sport</p>
+			<img src="{{ url_for('static', filename='pic.jpg')}}">
+		</div>
 
+		<div class="main">
+			<ul>{% if likes_same_sport == True %}
+					{% for player in fav_players %}
+					<li> {{player}} </li>
+					{% endfor %}
+				{% endif %}
+			</ul>
+		</div>
+	</div>
+	
+	
 </html>
